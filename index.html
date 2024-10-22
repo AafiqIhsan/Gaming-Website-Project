@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToothFairy Gaming</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* General Styling for Sections with Background Images */
+    section {
+      position: relative;
+      color: white;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.7;
+    }
+
+    #game-download{
+      background-image: url("./images/background-news.jpg");
+      color: #E5E5CB;
+    }
+
+    #latest-news{
+      background-image: url("./images/background-downloads.jpg");
+      color: black;
+    }
+
+    #about-company{
+      background-image: url("./images/background-about.jpg");
+      color: #3C3D37;
+    }
+
+    .btn{
+      background-color: #D89216;
+    }
+
+    .title-text{
+      color: #CBE4DE;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation Bar with Video Background -->
+  <header class="position-relative">
+    <!-- Video Background -->
+    <video autoplay muted loop class="position-absolute w-100 h-100" style="object-fit: cover; z-index: -1;">
+      <source src="./videos/background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ToothFairy Gaming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#game-download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#latest-news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-company">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="container text-center text-light" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+      <div class="title-text">
+        <h1>Welcome to ToothFairy Gaming</h1>
+        <p>Experience the adventure of a lifetime.</p>
+        <a href="#game-download" class="btn btn-primary btn-lg">Download Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section for Game Download with Background Image -->
+  <section id="game-download" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Download Our Latest Game</h2>
+      <p>Get the newest version of ToothFairy Adventure now!</p>
+      <a href="#" class="btn btn-primary btn-lg">Download Now</a>
+    </div>
+  </section>
+
+  <!-- Section for Latest News with Background Image -->
+  <section id="latest-news" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Latest News</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/card1.jpg" class="card-img-top" alt="News Image 1">
+            <div class="card-body">
+              <h5 class="card-title">New Update Released!</h5>
+              <p class="card-text">Our latest update is now available with new features and improvements.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/card3.jpg" class="card-img-top" alt="News Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Esports Tournament</h5>
+              <p class="card-text">Join us for an exciting ToothFairy Gaming tournament coming this fall!</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./images/card2.jpg" class="card-img-top" alt="News Image 3">
+            <div class="card-body">
+              <h5 class="card-title">New Game Announcement</h5>
+              <p class="card-text">Stay tuned for the upcoming fun and exciting game releases this winter.</p>
+              <a href="#" class="btn btn-primary">Get Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Company Section with Background Image -->
+  <section id="about-company" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">About ToothFairy Gaming</h2>
+      <p class="text-center">ToothFairy Gaming is a leading developer of fantasy and adventure games, bringing you immersive experiences since 2020. We strive to deliver high-quality games that captivate players around the world.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 ToothFairy Gaming. All Rights Reserved.</p>
+      <p>Follow us on: 
+        <a href="#" class="text-light">Twitter</a> | 
+        <a href="#" class="text-light">Facebook</a> | 
+        <a href="#" class="text-light">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies (Popper.js, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
